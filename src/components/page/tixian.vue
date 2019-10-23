@@ -1,18 +1,18 @@
 <template>
   <div>
-      <div style="float: left;margin-top: 120px;margin-left: 110px;">
-          <el-button type="primary" round v-on:click="get_data()" style="border-bottom-width: 1px;margin-bottom: 31px;margin-left: 80px;margin-right: 52px;">获取配置</el-button>
+      <div style="float: left;margin-top: 80px;margin-left: 110px;">
+          <el-button type="primary" round v-on:click="get_data()" style="border-bottom-width: 1px;margin-bottom: 20px;margin-left: 170px;margin-right: 260px;">获取配置</el-button>
           <el-button type="success" round v-on:click="Chage()">{{butme}}</el-button>
-          <el-table :data="tableData" style="width: 400px">
-      <el-table-column align='center' prop="public" label="支付宝公钥" width="400">
+          <el-table :data="tableData" style="width: 800px">
+      <el-table-column align='center' prop="public" label="支付宝公钥" width="800">
       </el-table-column>
     </el-table>
-      <el-table :data="tableData" style="width: 400px">
-      <el-table-column align='center' prop="prvate" label="支付宝私钥" width="400">
+      <el-table :data="tableData" :show-overflow-tooltip="true" style="width: 800px" >
+      <el-table-column align='center' prop="prvate" label="支付宝私钥" width="800" >
       </el-table-column>
     </el-table>
-      <el-table :data="tableData" style="width: 400px">
-      <el-table-column align='center' prop="appid" label="商户应用ID" width="400">
+      <el-table :data="tableData" style="width: 800px">
+      <el-table-column align='center' prop="appid" label="商户应用ID" width="800">
       </el-table-column>
     </el-table>
       </div>
@@ -137,7 +137,7 @@ export default {
 
     .login-container
         width 350px
-        margin 130px 20% 20%
+        margin 130px 1% 10%
         background-clip padding-box
         padding 35px 35px 15px 35px
         border 1px solid #eaeaea
